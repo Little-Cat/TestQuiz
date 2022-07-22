@@ -14,12 +14,7 @@ import java.util.ResourceBundle;
 public class HelloController implements Initializable {
     @FXML
     private Label welcomeText;
-    private HelloModel model;
-
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    private final HelloModel model;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

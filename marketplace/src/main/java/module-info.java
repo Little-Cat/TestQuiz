@@ -5,8 +5,11 @@ module com.example.marketplace {
     requires spring.context;
     requires spring.data.commons;
     requires java.persistence;
+
     requires static lombok;
+
     requires org.hibernate.orm.core;
+    requires spring.beans;
 
 
     opens com.example.marketplace to javafx.fxml;

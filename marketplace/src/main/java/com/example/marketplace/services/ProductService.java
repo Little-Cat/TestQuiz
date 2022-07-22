@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
-public class SecondService extends BaseService {
+public class ProductService extends BaseService {
 
     @Autowired
     private ProductRepository repository;
@@ -15,6 +15,8 @@ public class SecondService extends BaseService {
     @Override
     public void start() {
         System.out.println("start second service");
+
+        this.repository.findAll();
     }
 
     @Override

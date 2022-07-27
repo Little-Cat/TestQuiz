@@ -8,9 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class ProductService extends BaseService {
 
-    @Autowired
-    private ProductRepository repository;
+    private final ProductRepository repository;
 
+    public ProductService(ProductRepository repository) {
+        this.repository = repository;
+    }
 
     @Override
     public void start() {

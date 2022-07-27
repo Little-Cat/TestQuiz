@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@AutoConfiguration
 public class BootstrapLauncher {
     public static void main(String[] args) {
         Application.launch(JavaFxLauncher.class, args);

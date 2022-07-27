@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService extends BaseService {
 
+    private final UserRepository repository;
 
-    @Autowired
-    private UserRepository repository;
+    public UserService(UserRepository repository) {
+        this.repository = repository;
+    }
 
     @Override
     public void start() {

@@ -9,13 +9,6 @@
 
     <context:property-placeholder location="classpath:application.properties"/>
 
-    <bean name="FirstService" id="FirstService" class="com.example.marketplace.services.UserService">
-    </bean>
-
-    <bean name="SecondService" id="SecondService" class="com.example.marketplace.services.ProductService">
-    </bean>
-
-
     <bean name="HelloModel" class="com.example.marketplace.models.HelloModel">
 
     </bean>
